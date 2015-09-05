@@ -2,11 +2,18 @@
   "name": "imgbase64",
   "version": "1.0.0",
   "description": "",
+  "bin": {
+    "imgbase64": "imgbase64.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzwaizl/imgbase64"
+  },
+  "author": "lzwai",
   "license": "ISC",
   "dependencies": {
     "async": "~1.4.2",
