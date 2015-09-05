@@ -11,3 +11,4 @@ mods/.sass-cache/
 build/
 .idea/
 ~ 
+npm-debug.log
