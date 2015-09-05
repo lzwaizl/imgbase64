@@ -1,0 +1,13 @@
+/icons
+rconfig
+.jshintrc
+.wvproject
+node_modules/
+.travis.yml
+*.swp
+.sass-cache/
+mods/.sass-cache/
+.DS_Store
+build/
+.idea/
+~ 
