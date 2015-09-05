@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/yingkong/me/github/imgbase64',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/yingkong/.npm/imgbase64/1.0.0/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/yingkong/.npm/imgbase64/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/yingkong/me/github/imgbase64' ]
+11 verbose tarball /Users/yingkong/.npm/imgbase64/1.0.0/package.tgz
+12 verbose folder /Users/yingkong/me/github/imgbase64
+13 info prepublish imgbase64@1.0.0
+14 verbose addLocalTarball adding from inside cache /Users/yingkong/.npm/imgbase64/1.0.0/package.tgz
+15 silly cache afterAdd imgbase64@1.0.0
+16 verbose afterAdd /Users/yingkong/.npm/imgbase64/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/yingkong/.npm/imgbase64/1.0.0/package/package.json written
+18 silly publish { name: 'imgbase64',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: '对指定less文件下的所有background或background-image所引用的图片进行base64编码，然后替换原文件内容。',
+18 silly publish   bin: { imgbase64: 'imgbase64.js' },
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/lzwaizl/imgbase64.git' },
+18 silly publish   author: { name: 'lzwai' },
+18 silly publish   license: 'ISC',
+18 silly publish   dependencies: { async: '~1.4.2', imageinfo: '~1.0.4' },
+18 silly publish   readme: '## 概述\n\n对指定less文件下的所有background或background-image所引用的图片进行base64编码，然后替换原文件内容。\n\n## 约定\n\nless文件目录下，新建一个icons目录，把less文件下所需要用到的图片都放入icons中，然后使用',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'ee621c5a44580085cb0d1324491d07c7ca439f32',
+18 silly publish   bugs: { url: 'https://github.com/lzwaizl/imgbase64/issues' },
+18 silly publish   homepage: 'https://github.com/lzwaizl/imgbase64#readme',
+18 silly publish   _id: 'imgbase64@1.0.0',
+18 silly publish   _shasum: 'fda91d3139e83514cec7d9416a056c3d4340043f',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name imgbase64
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/imgbase64
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/yingkong/.npm/imgbase64/1.0.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/imgbase64
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 23:20:01
+29 verbose request using bearer token for auth
+30 verbose request id 1485bc46e95ba52e
+31 http request PUT https://registry.npmjs.org/imgbase64
+32 http 403 https://registry.npmjs.org/imgbase64
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sat, 05 Sep 2015 15:08:38 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-nrt6135-NRT',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1441465717.651413,VS0,VE611' }
+34 verbose request invalidating /Users/yingkong/.npm/registry.npmjs.org/imgbase64 on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : imgbase64
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+36 verbose stack     at Request.emit (events.js:110:17)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+36 verbose stack     at Request.emit (events.js:129:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+36 verbose stack     at IncomingMessage.emit (events.js:129:20)
+36 verbose stack     at _stream_readable.js:908:16
+36 verbose stack     at process._tickCallback (node.js:355:11)
+37 verbose statusCode 403
+38 verbose pkgid imgbase64
+39 verbose cwd /Users/yingkong/me/github/imgbase64
+40 error Darwin 14.3.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v0.12.7
+43 error npm  v2.11.3
+44 error code E403
+45 error "You cannot publish over the previously published version 1.0.0." : imgbase64
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
