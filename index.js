@@ -56,13 +56,13 @@ var replaceContent = function (fileImgMsg) {
         content = content.replace(item.imgUrl, item.base64);
     }    
 
-    // fs.writeFile(name, content, 'utf-8', function(err) {
-    //     if (err) {
-    //         console.error(err);
-    //     } else {
-    //         console.log("文件写入完毕！");
-    //     }
-    // });
+    fs.writeFile(name, content, 'utf-8', function(err) {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log("文件写入完毕！");
+        }
+    });
    
 };
 
